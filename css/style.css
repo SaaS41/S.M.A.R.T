@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url(login-cadastro.css);
+
+@import url(quem-somos.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', arial, sans-serif;
+}
+
+:root {
+    /* modo escuro */
+    --background: #001314;
+    --color01: #034753;
+    --color02: #047083;
+    --color03: #048ba3;
+    --color04: #009CB8;
+    --color05: #00BDDE;
+    --color06: #00D1F7;
+    --button: #0dc3db;
+    --button-hover: #11b0c5;
+    --button-link-hover: #108c9c;
+    --color-card-info: #009CB8;
+
+    /* modo claro */
+    /* --light-background: #61D7E1;
+    --color-card-info: #0096A3; */
+}
+
+/* Modo Claro */
+[data-theme = "light"] {
+    --background: #61D7E1;
+    --color-card-info: #0096A3;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+}
+
+span.enf {
+    color: #ffd209;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* background: red; */
+
+    /* left: 90%; */
+    text-align: right;
+    /* margin: 10px; */
+}
+
+nav .link {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all .2s ease;
+    margin-left: 10px;
+}
+
+nav .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .2s ease;
+}
+
+nav .link:hover::after {
+    transform-origin: left;
+    transform: scale(1);
+}
+
+nav .btn-login {
+    background: var(--button);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-left: 10px;
+}
+
+nav .btn-login:hover {
+    background: var(--button-link-hover);
+    transform: scale(1.1);
+}
+
+.logo img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 2.8em;
+    color: var(--color06);
+}
+
+.titulo h2 {
+    font-size: 1.6em;
+    margin: 0 10px;
+    color: var(--color05);
+}
+
+.info {
+    background-color: var(--color-card-info);
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.info p {
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    font-weight: 550;
+}
+
+.info button {
+    outline: none;
+    border: none;
+    background-color: var(--button);
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+    /* border: solid 1px var(--color02); */
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.info button:hover {
+    background-color: var(--button-hover);
+    box-shadow: none;
+}

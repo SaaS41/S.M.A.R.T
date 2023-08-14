@@ -1,0 +1,32 @@
+.cards {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    background: var(--color-card-info);
+    padding: 20px;
+    /* margin: 0; */
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.img > img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    /* padding: 20px 20px 0 20px; */
+}
+
+.apre {
+    text-align: center;
+    color: var(--color05);
+    font-size: 1.3em;
+    margin-top: 5px;
+}
